@@ -16,13 +16,8 @@ const AddForm = (props) => {
       
       const onFinish = values => {
         values.key=uuid()
-        // values.delete=<button onClick={()=>{props.deletePatian(values.key)}}>delete</button>
-        // values.edit=<button onClick={props.editPatien}>edit</button>
-
         console.log('Success:', values);
-        // props.addPerson(values)
         props.handleAdd(values)
-        
       };
     
       const onFinishFailed = errorInfo => {
